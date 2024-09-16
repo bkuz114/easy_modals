@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="assets/css/modal.css" />
+    <title>Easy Modals!</title>
+</head>
+
+<body>
+
+    <!-- Modal Example #1: Works just by adding to HTML -->
+
+    <!-- Trigger for the Modal -->
+    <button class="modal-triggers" target="myModal">Click me first</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <p>I am a modal. I use javascript and css only without any dependencies or external libraries like jquery.
+            </p>
+            <p>You don't need to write any javascript or call any functions to use me: All you need to do is add me to your HTML. (Of course, you will need to include modal.js and modal.css into your HTML document. Make sure to put the script tag for modal.js at the END of your HTML file, so that the HTML has time to load before the funtions in there run.)</p>
+        </div>
+    </div>
+
+
+    <!-- Example #2: Open a modal by calling javascript function open_modal() -->
+    <br>
+    <div id="manual-trigger" onclick="open_modal(document.getElementById('manual-modal'));">
+        <p>Click on me now...</p>
+    </div>
+    <br>
+
+    <!-- The Modal -->
+    <div id="manual-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <p>Unlike the first modal, I triggered this modal with javascript. (Open the HTML for this page and look for the div with id 'manual-trigger' and notice its onclick event: that's where this modal is getting triggered.)
+            </p>
+            <p>This could be useful if you want your modal to open after doing some work, for example, after a call to the server (maybe you want to open a modal to display information from the server).
+            </p>
+            <p>To open a modal via javascript, add this line to your js file: open_modal(document.getElementById("your-modals-id")); (where "your-modals-id" is the id of a div of class "modal", as structured in this page.).
+            </p>
+            <p>
+                You don't need to worry about closing the modal; modal.js has already handled that.
+            </p>
+        </div>
+    </div>
+
+    <script src="assets/js/modal.js"></script>
+
+</body>
+
+</html>
