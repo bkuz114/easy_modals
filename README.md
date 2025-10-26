@@ -11,9 +11,9 @@ Simple modals using CSS and Javascript with no other dependencies.
 ```
     <!-- Trigger for the Modal -->
     <button class="modal-triggers" data-target="myModal">Click me</button>
+
     <!-- The Modal -->
     <div id="myModal" class="modal">
-
         <!-- Modal content -->
         <div class="modal-content">
             <span class="modal-close">&times;</span>
@@ -43,9 +43,9 @@ To use this example:
 
     <!-- Trigger for the Modal -->
     <button class="modal-triggers" data-target="myModal">Click me</button>
+
     <!-- The Modal -->
     <div id="myModal" class="modal">
-
         <!-- Modal content -->
         <div class="modal-content">
             <span class="modal-close">&times;</span>
