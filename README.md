@@ -10,7 +10,7 @@ Simple modals using CSS and Javascript with no other dependencies.
 
 ```
     <!-- Trigger for the Modal -->
-    <button class="modal-triggers" target="myModal">Click me</button>
+    <button class="modal-triggers" data-target="myModal">Click me</button>
     <!-- The Modal -->
     <div id="myModal" class="modal">
 
@@ -42,7 +42,7 @@ To use this example:
 <body>
 
     <!-- Trigger for the Modal -->
-    <button class="modal-triggers" target="myModal">Click me</button>
+    <button class="modal-triggers" data-target="myModal">Click me</button>
     <!-- The Modal -->
     <div id="myModal" class="modal">
 

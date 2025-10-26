@@ -58,8 +58,8 @@ function prepare_modal_trigger(trigger) {
     // is clicked, open its modal
     trigger.onclick = function() {
         // get trigger's target modal
-        var myattr = trigger.getAttribute("target");
-        var modal = document.getElementById(trigger.getAttribute("target"));
+        var myattr = trigger.getAttribute("data-target");
+        var modal = document.getElementById(myattr);
         open_modal(modal);
     }
 }
