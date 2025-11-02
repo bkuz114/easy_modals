@@ -92,9 +92,19 @@ In this dummy example, I am just opening the modal when the page loads. Obviousl
     <script src="modal.js"></script>
 
     <script>
-        open_modal(document.getElementById("manual-modal"));
+        open_modal(document.getElementById("manual-modal"))
     </script>
 </body>
 
 </html>
 ```
+
+# Info for mobile deployment (preventing modal from moving out of viewport)
+
+If employing this in a mobile environment, ensure you have a meta viewport tag, with **minimum-scale=1**, such as:
+
+```
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+```
+
+If you do NOT have this, then you might run into an issue on chromium based browsers: If there is an element on the page with height exceeding veiwport height, then Chrome might adjust the viewport height. As a result, if you click a modal trigger while that element is in view, the modal might drift out of the viewport. In my experience, adding `minimum-scale=1` to the meta viewport tag solves this issue.
